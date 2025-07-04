@@ -7,9 +7,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font-sans antialiased">
-  <nav class="bg-white shadow sticky top-0 z-10">
+  <nav class="sticky top-0 z-10">
     <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-      <a href="index.html" class="text-xl font-semibold">Thrayee Engineering</a>
       <div id="navLinks" class="hidden md:flex space-x-4"></div>
       <button id="menuBtn" class="md:hidden">☰</button>
     </div>
@@ -19,11 +18,11 @@
   <main class="container mx-auto px-4 py-8">
     <h1 class="text-2xl font-semibold mb-4">Contact Us</h1>
     <div class="grid md:grid-cols-2 gap-4">
-      <form id="contactPageForm" class="bg-white p-4 shadow space-y-2" action="#" method="POST">
+      <form id="contactPageForm" class="p-4 shadow space-y-2" action="#" method="POST">
         <input type="text" name="name" placeholder="Name" class="w-full border p-2" required>
         <input type="email" name="email" placeholder="Email" class="w-full border p-2" required>
         <textarea name="message" placeholder="Message" class="w-full border p-2" required></textarea>
-        <button type="submit" class="bg-blue-600 text-white px-4 py-2">Send</button>
+        <button type="submit" class="px-4 py-2">Send</button>
       </form>
       <iframe class="w-full min-h-[300px]" src="https://www.google.com/maps?q=JNTU%20Hyderabad&output=embed" loading="lazy"></iframe>
     </div>

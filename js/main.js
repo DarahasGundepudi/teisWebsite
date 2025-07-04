@@ -31,7 +31,7 @@ function createNav(products) {
     wrapper.appendChild(button);
 
     const dropdown = document.createElement('div');
-    dropdown.className = 'absolute hidden group-hover:block bg-white shadow mt-2';
+    dropdown.className = 'absolute hidden group-hover:block mt-2';
     const catProducts = products.filter(p => p.category === cat);
     if (catProducts.length === 0) {
       const span = document.createElement('span');
@@ -41,7 +41,7 @@ function createNav(products) {
     } else {
       catProducts.forEach(p => {
         const a = document.createElement('a');
-        a.className = 'block px-4 py-2 hover:bg-gray-100';
+        a.className = 'block px-4 py-2';
         a.href = `product.html?id=${p.id}`;
         a.textContent = p.name;
         dropdown.appendChild(a);
@@ -90,12 +90,12 @@ function populateProductPage(products) {
         <h1 class="text-2xl font-semibold mb-2">${product.name}</h1>
         <p class="mb-4">${product.tagline}</p>
         <ul class="list-disc ml-6 mb-4">${specs}</ul>
-        <form action="#" method="POST" class="space-y-2 bg-gray-100 p-4">
+        <form action="#" method="POST" class="space-y-2 p-4 shadow">
           <input type="hidden" name="product" value="${product.name}">
           <input type="text" name="name" placeholder="Name" class="w-full border p-2" required>
           <input type="email" name="email" placeholder="Email" class="w-full border p-2" required>
           <textarea name="message" placeholder="Message" class="w-full border p-2" required></textarea>
-          <button type="submit" class="bg-blue-600 text-white px-4 py-2">Inquire</button>
+          <button type="submit" class="px-4 py-2">Inquire</button>
         </form>
       </div>
     </div>`;
