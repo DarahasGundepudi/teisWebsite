@@ -1,0 +1,19 @@
+@echo off
+echo Starting all services...
+
+REM Start MySQL Service
+echo Starting MySQL Server...
+net start MySQL
+
+REM Start the Node.js Server
+echo Starting Node.js Server...
+cd D:\Lottery1\NodeJS
+start cmd /k "node server.js"
+
+REM Start the Electron Frontend
+echo Starting Electron Frontend...
+cd D:\Lottery1\LotteryTest
+start cmd /k "npm start"
+
+echo All services started successfully.
+pause
