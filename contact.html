@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Thrayee Engineering</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans antialiased">
+  <nav class="sticky top-0 z-10">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div id="navLinks" class="hidden md:flex space-x-4"></div>
+      <button id="menuBtn" class="md:hidden">☰</button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4"></div>
+  </nav>
+
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-2xl font-semibold mb-4">Contact Us</h1>
+    <div class="grid md:grid-cols-2 gap-4">
+      <form id="contactPageForm" class="p-4 shadow space-y-2" action="#" method="POST">
+        <input type="text" name="name" placeholder="Name" class="w-full border p-2" required>
+        <input type="email" name="email" placeholder="Email" class="w-full border p-2" required>
+        <textarea name="message" placeholder="Message" class="w-full border p-2" required></textarea>
+        <button type="submit" class="px-4 py-2">Send</button>
+      </form>
+      <iframe class="w-full min-h-[300px]" src="https://www.google.com/maps?q=JNTU%20Hyderabad&output=embed" loading="lazy"></iframe>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "hydraulic-pump",
+    "name": "Hydraulic Pump",
+    "tagline": "High-efficiency industrial pump",
+    "specs": [
+      "Pressure: 100 bar",
+      "Flow rate: 50 L/min",
+      "Material: Alloy steel"
+    ],
+    "image": "images/hydraulic-pump.jpg",
+    "category": "Engineering Products",
+    "homepage": true
+  },
+  {
+    "id": "grc-panel",
+    "name": "GRC Panel",
+    "tagline": "Durable glassfibre reinforced concrete panel",
+    "specs": [
+      "Thickness: 10mm",
+      "Finish: Smooth",
+      "Custom sizes available"
+    ],
+    "image": "images/grc-panel.jpg",
+    "category": "GRC Products",
+    "homepage": true
+  },
+  {
+    "id": "manganese-ore",
+    "name": "Manganese Ore",
+    "tagline": "High-grade manganese for alloying",
+    "specs": [
+      "Purity: 98%",
+      "Form: Lumps",
+      "Supply ability: 5k tons"
+    ],
+    "image": "images/manganese-ore.jpg",
+    "category": "Metals & Mining Ores",
+    "homepage": false
+  }
+]
